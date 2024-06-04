@@ -56,7 +56,7 @@ var createScene = function () {
         dynamicTexture.hasAlpha = true;
         var ctx = dynamicTexture.getContext();
         ctx.font = "bold 44px Arial";
-        dynamicTexture.drawText(${point.x.toFixed(2)}, ${point.y.toFixed(2)}, ${point.z.toFixed(2)}, 75, 135, "white");
+        dynamicTexture.drawText(`${point.x.toFixed(2)}`, `${point.y.toFixed(2)}`, `${point.z.toFixed(2)}`, 75, 135, "white");
 
         var plane = BABYLON.MeshBuilder.CreatePlane("textPlane", { size: 1 }, scene);
         plane.position = new BABYLON.Vector3(point.x, point.y + 0.2, point.z);
